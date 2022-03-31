@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh" class="  ext-strict">
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>剪映字幕在线工具 ｜支持剪映字幕文件导入/导出 by 码中人</title>
         <meta name="description" content="剪映的有一个非常好用的功能，就是语音转文字功能，用来给视频配字幕简直不要太舒服，不过，有时候我们需要把字幕导入到pr或者ae里进行二次编辑，所以需要一个把字幕文件导出的工具。同时，该工具也支持将字幕导入到剪映之中">
         <meta name="keywords" content="剪映, 字幕导出, 剪映Pro,字幕工具,支持剪映字幕文件导入/导出">
         <meta name="author" content="码中人">
-        <link rel="shortcut icon" href="./favicon.ico">
-        <link rel="stylesheet" href="./index0326.css">
-        <script src="./hm.js"></script>
-        <script src="./index0326.js" defer="defer"></script>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="index0326.css">
+        <script src="index0326.js" defer="defer"></script>
     </head>
-    <body class=" ext-webkit ext-chrome" id="syno-nsc-ext-gen3">
-        <h1 title="剪映字幕在线工具"><img src="./jylogo.svg" alt="剪映字幕在线工具"><br>
+    <body>
+        <h1 title="剪映字幕在线工具"><img src="jylogo.svg" alt="剪映字幕在线工具"><br>
             字幕导出 |
-            <a href="./srt2jy.html">字幕导入</a>
+            <a href="srt2jy.html">字幕导入</a>
         </h1>
         <div id="steps">
             <div id="step1">
@@ -29,11 +29,11 @@
                                 MacOS 目录：/Users/<i>YourName</i>/Movies/JianyinPro/User Data/Projects/com.lveditor.draft/
                             </li>
                             <li>
-                                常见问题：<a href="./issues.html#where" target="_blank">文件在哪</a>
-                                <a href="./issues.html#which" target="_blank">哪个文件</a>
-                                <a href="./issues.html#out-of-memory" target="_blank">页面崩溃</a>
-                                <a href="./issues.html#nothing" target="_blank">联系作者</a>
-                                <a href="./issues.html" target="_blank">更多&gt;&gt;
+                                常见问题：<a href="issues.html#where" target="_blank">文件在哪</a>
+                                <a href="issues.html#which" target="_blank">哪个文件</a>
+                                <a href="issues.html#out-of-memory" target="_blank">页面崩溃</a>
+                                <a href="issues.html#nothing" target="_blank">联系作者</a>
+                                <a href="issues.html" target="_blank">更多>>
                                 </a>
                             </li>
                         </ul>
@@ -47,7 +47,7 @@
             <div id="step3">
                 <div class="control">
                     <button id="save-btn" class="button-16">保存到本地</button>
-                    <button id="saveAsFilePicker" class="button-16" style="display: inline-block;">另存为</button>
+                    <button id="saveAsFilePicker" class="button-16">另存为</button>
                     <div class="fields">
                         <ul>
                             <li>
@@ -70,55 +70,7 @@
                                 </button>
                                 <label for="optsBtn">（删除语气词、文本替换等）</label>
                                 <div id="options-box">
-                                    <div id="filters">
-                                        <label>删除语气词：</label>
-                                        <span><input type="checkbox" name="filter" id="f0" value="呢">
-                                            <label for="f0">呢</label>
-                                        </span><span><input type="checkbox" name="filter" id="f1" value="啊">
-                                            <label for="f1">啊</label>
-                                        </span><span><input type="checkbox" name="filter" id="f2" value="嗯">
-                                            <label for="f2">嗯</label>
-                                        </span><span><input type="checkbox" name="filter" id="f3" value="呃">
-                                            <label for="f3">呃</label>
-                                        </span><span><input type="checkbox" name="filter" id="f4" value="哎">
-                                            <label for="f4">哎</label>
-                                        </span><span><input type="checkbox" name="filter" id="f5" value="唉">
-                                            <label for="f5">唉</label>
-                                        </span><span><input type="checkbox" name="filter" id="f6" value="哦">
-                                            <label for="f6">哦</label>
-                                        </span><span><input type="checkbox" name="filter" id="f7" value="那么">
-                                            <label for="f7">那么</label>
-                                        </span><span><input type="checkbox" name="filter" id="f8" value="一直">
-                                            <label for="f8">一直</label>
-                                        </span><span><input type="checkbox" name="filter" id="f9" value="就是">
-                                            <label for="f9">就是</label>
-                                        </span><span><input type="checkbox" name="filter" id="f10" value="所以">
-                                            <label for="f10">所以</label>
-                                        </span><span><input type="checkbox" name="filter" id="f11" value="然后">
-                                            <label for="f11">然后</label>
-                                        </span><span><input type="checkbox" name="filter" id="f12" value="什么">
-                                            <label for="f12">什么</label>
-                                        </span><span><input type="checkbox" name="filter" id="f13" value="那样的">
-                                            <label for="f13">那样的</label>
-                                        </span><span><input type="checkbox" name="filter" id="f14" value="大概">
-                                            <label for="f14">大概</label>
-                                        </span><span><input type="checkbox" name="filter" id="f15" value="这样的">
-                                            <label for="f15">这样的</label>
-                                        </span><span><input type="checkbox" name="filter" id="f16" value="可能">
-                                            <label for="f16">可能</label>
-                                        </span><span><input type="checkbox" name="filter" id="f17" value="这个">
-                                            <label for="f17">这个</label>
-                                        </span><span><input type="checkbox" name="filter" id="f18" value="那个">
-                                            <label for="f18">那个</label>
-                                        </span><span><input type="checkbox" name="filter" id="f19" value="这">
-                                            <label for="f19">这</label>
-                                        </span><span><input type="checkbox" name="filter" id="f20" value="那么个">
-                                            <label for="f20">那么个</label>
-                                        </span><span><input type="checkbox" name="filter" id="f21" value="这么个">
-                                            <label for="f21">这么个</label>
-                                        </span>
-                                        <button id="filterBtn">应用</button>
-                                    </div>
+                                    <div id="filters"></div>
                                     <div id="replacement">
                                         <label for="">文本替换：</label>
                                         <input type="text" id="old_text" class="rinput">替换为：<input type="text" id="new_text" class="rinput">
@@ -131,31 +83,6 @@
                 </div>
                 <textarea id="srt"></textarea>
             </div>
-        </div>
-        <div id="syno-nsc-ext-comp-1008" class=" x-tip-invalid" style="position: absolute; z-index: 11000; visibility: hidden; display: none;">
-            <div class="x-tip-invalid-tl">
-                <div class="x-tip-invalid-tr">
-                    <div class="x-tip-invalid-tc">
-                        <div class="x-tip-invalid-header x-unselectable" id="syno-nsc-ext-gen4">
-                            <span class="x-tip-invalid-header-text"></span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="x-tip-invalid-bwrap" id="syno-nsc-ext-gen5">
-                <div class="x-tip-invalid-ml">
-                    <div class="x-tip-invalid-mr">
-                        <div class="x-tip-invalid-mc" id="syno-nsc-ext-gen8">
-                            <div class="x-tip-invalid-body" id="syno-nsc-ext-gen6" style="height: auto;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="x-tip-invalid-bl x-panel-nofooter" id="syno-nsc-ext-gen7">
-                    <div class="x-tip-invalid-br">
-                        <div class="x-tip-invalid-bc"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="x-tip-anchor x-tip-anchor-top" id="syno-nsc-ext-gen9" style="z-index: 11001;"></div>
         </div>
     </body>
 </html>
