@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>常见问题 - 剪映字幕在线工具 - 码中人</title>
+        <meta name="description" content="剪映字幕在线工具常见问题">
+        <meta name="keywords" content="剪映, 字幕导出,字幕导入, 剪映Pro,字幕工具">
+        <meta name="author" content="码中人">
+        <style>
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .box {
+                padding: 10px 30px 30px 40px;
+                box-shadow: rgba(136,165,191,.48) 6px 2px 16px 0,rgba(255,255,255,.8) -6px -2px 16px 0;
+                margin-bottom: 30px;
+            }
+            h1,
+            h2 {
+                position: relative;
+                margin-bottom: 30px;
+                margin-top: 10px;
+            }
+            h1::before,
+            h2::before {
+                content: "";
+                position: absolute;
+                left: -5px;
+                bottom: -5px;
+                width: 200px;
+                height: 14px;
+                transform: skew(-12deg);
+                background: rgba(238,111,87,.5);
+                z-index: -1;
+            }
+            h2::before {
+                background: #c8edff;
+            }
+            li i {
+                color: red;
+            }
+            p img {
+                max-width: 100%;
+            }
+            ul li {
+                line-height: 30px;
+            }
+            p b {
+                color: red;
+            }
+            p iframe {
+                min-width: 90%;
+                height: auto;
+                min-height: 650px;
+            }
+            @media (max-width:768px) {
+                p iframe {
+                    min-height: 400px;
+                }
+            }
+            .video-icon {
+                position: relative;
+                top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <h1>常见问题列表</h1>
+                <ul>
+                    <li>
+                        <a href="#copy">版权所有</a>
+                    </li>
+                    <li>
+                        <a href="#where">剪映识别的字幕文件在哪里？</a>
+                    </li>
+                    <li>
+                        <a href="#which">选哪个文件？哪个文件是字幕文件？</a>
+                    </li>
+                    <li>
+                        <a href="#out-of-memory">选择文件后，页面崩溃怎么办？</a>
+                    </li>
+                    <li>
+                        <a href="#quick">如何快速找到文件？</a>
+                    </li>
+                    <li>
+                        <a href="#nothing">点生成没反应？联系作者</a>
+                    </li>
+                    <li>
+                        <a href="#messy">乱码问题</a>
+                    </li>
+                    <li>
+                        <a href="#bcut">同类似字幕生成软件有吗？</a>
+                    </li>
+                    <li>
+                        <a href="#only-text">如何导出纯文本</a>
+                    </li>
+                    <li>
+                        <a href="#thanks">谢谢您的赞赏！</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box" id="copy">
+                <h2>版权所有</h2>
+                <p></p>
+                <ul>
+                    <li>本站搬运自<a href="https://jy.mzh.ren/" target="_blank">https://jy.mzh.ren/</a>并去除广告</li>
+                    <li>如果侵权请联系立即删除。</li>
+                </ul>
+            </div>
+            <div class="box" id="where">
+                <h2>剪映识别的字幕文件在哪里？</h2>
+                <p>
+                    一般情况下，剪映生成的字幕文件在以下目录：
+                </p>
+                <ul>
+                    <li>
+                        Windows 目录：C:\Users\<i>YourName</i>\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft\
+                    </li>
+                    <li>
+                        MacOS 目录：/Users/<i>YourName</i>/Movies/JianyinPro/User Data/Projects/com.lveditor.draft/
+                    </li>
+                </ul>
+                <p>
+                    如果不是默认安装，最通用的方法是在打开剪映工程，在媒体库下选中视频，右侧就会出现该工程的目录。字幕文件就在该目录下。
+                    <br>
+                    如图：
+                </p>
+                <p>
+                    <img src="images/jy_zimu_location_yh.jpg" alt="">
+                </p>
+                <p>
+                    如果按目录查找，没有发现该文件夹，有可能隐藏了，可以移除以下选项：
+                </p>
+                <p>
+                    <img src="images/show-hide.jpg" alt="">
+                </p>
+            </div>
+            <div class="box" id="which">
+                <h2>
+                    选哪个文件？哪个文件是字幕文件？
+                </h2>
+                <p>
+                    找到字幕所在文件夹之后，发现有好多个文件。
+                </p>
+                <p>
+                    <img src="images/jy_which_file.jpg" alt="">
+                </p>
+                <p>
+                    windows下选
+                    <b>draft_content.json</b>
+                    文件，macOS下选
+                    <b>draft_info.json</b>
+                    文件。
+                    <br>
+                    其基本原则就是选文件最大的.json文件。
+                </p>
+                <p>
+                    <img src="images/jy_which_file_2.png" alt="">
+                </p>
+                <p>
+                    注意不是.bak格式的文件，大家选择时注意把后缀打开。
+                </p>
+                <p>
+                    <img src="images/show-file-extensions.png" alt="">
+                </p>
+            </div>
+            <div class="box" id="out-of-memory">
+                <h2>
+                    选择文件后，页面崩溃怎么办？
+                </h2>
+                <p>
+                    有时候选择文件之后，页面崩溃了，显示 Out Of Memory。
+                </p>
+                <p>
+                    <img src="images/out-of-memory.jpg" alt="">
+                </p>
+                <p>
+                    你可用记本事本打开draft_content.json，全选-复制所有内容，粘贴到左侧文本框。然后再点生成，效果是一样的。
+                </p>
+                <p>
+                    <img src="images/open-with-notepad.jpg" alt="">
+                </p>
+            </div>
+            <div class="box" id="quick">
+                <h2>如何快速定位文件？</h2>
+                <p>
+                    有网友反映每次都要找这个文件很麻烦，哈哈，这就是个电脑使用技巧问题了。
+                    <br>
+                    其实这个目录最多只需要找一次。
+                </p>
+                <p>
+                    <img src="images/quick-finder.jpg" alt="">
+                </p>
+                <p>
+                    你只需要将com.lveditor.draft文件夹拖到快速访问，下次就可以快速访问了。
+                </p>
+                <p>
+                    <img src="images/quick-finder-2.jpg" alt="">
+                </p>
+            </div>
+            <div class="box" id="nothing">
+                <h2>
+                    点生成按钮没反应？请联系我
+                </h2>
+                <p>
+                    如果选择文件之后，左侧文本框已经导入内容，点生成没有反应。
+                    <br>
+                    可能有以下原因：
+                </p>
+                <ul>
+                    <li>忘记在剪映PRO中识别字幕，（或者部分因网络问题，字幕识别中断）。这种情况下，字幕文件draft_content.json文件一般较小，一般只在4KB左右。<br>
+                        请重新回到剪映PRO-->文本-->智能字幕-->识别字幕或文稿匹配。
+                    </li>
+                    <li>
+                        如不是以上问题，可以尝试换个浏览器，建议edge或chrome。
+                    </li>
+                </ul>
+                <p></p>
+                <p>
+                    当然，也欢迎你加我微信咨询:
+                    <b>gameboy1000</b>
+                    。
+                </p>
+            </div>
+            <div id="messy" class="box">
+                <h2>字幕导入PR等乱码问题</h2>
+                <p>
+                    可以通过记事本工具打开字幕文件，另存为时，选择相应的编码格式。
+                </p>
+                <p>
+                    <img src="images/messy.jpg" alt="" srcset="">
+                </p>
+            </div>
+            <div class="box" id="bcut">
+                <h2>
+                    类似字幕生成软件有吗？
+                </h2>
+                <p>有的，比如说哔哩哔哩出品的<b>必剪</b>：<a href="https://bcut.drawyoo.com/" target="_blank">https://bcut.drawyoo.com/</a>
+                </p>
+                <p>
+                    同样，我也为必剪写了个字幕导出的工具。
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://bcut.mzh.ren/" target="_blank">https://bcut.mzh.ren/</a>
+                    </li>
+                    <li>
+                        备用：
+                        <a href="https://bcut2.mzh.ren/" target="_blank">https://bcut2.mzh.ren/</a>
+                    </li>
+                </ul>
+                <p></p>
+            </div>
+            <div class="box" id="only-text">
+                <h2>
+                    如何导出纯文本
+                </h2>
+                <p>生成成功，即右侧文本框有字幕文本之后，选择纯文本无时间码选项，再点保存到本地即可。</p>
+                <p>
+                    <img src="images/only-text.jpg" alt="">
+                </p>
+                <p>
+                    如果你已经导出.srt文件，你也可以使用我写的srt2txt的小工具。
+                    <br>
+                    <a href="https://jy.mzh.ren/srt2txt.html" target="_blank">https://jy.mzh.ren/srt2txt.html</a>
+                </p>
+            </div>
+            <div class="box" id="thanks">
+                <h2>
+                    谢谢您的赞赏！
+                </h2>
+                <p>
+                    <img src="zsm.png" alt="">
+                </p>
+            </div>
+        </div>
+        <script>
+            var _hmt = _hmt || [];
+            !function () {
+                var e = document.createElement("script");
+                e.src = "https://hm.baidu.com/hm.js?e7b0a2f7b1297fa347f6d20d863a7a94";
+                var t = document.getElementsByTagName("script")[0];
+                t
+                    .parentNode
+                    .insertBefore(e, t)
+            }()
+        </script>
+    </body>
+</html>

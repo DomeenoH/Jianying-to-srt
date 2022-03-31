@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>剪映字幕在线工具 ｜支持剪映字幕文件导入/导出 by 码中人</title>
+        <meta name="description" content="剪映的有一个非常好用的功能，就是语音转文字功能，用来给视频配字幕简直不要太舒服，不过，有时候我们需要把字幕导入到pr或者ae里进行二次编辑，所以需要一个把字幕文件导出的工具。同时，该工具也支持将字幕导入到剪映之中">
+        <meta name="keywords" content="剪映, 字幕导出, 剪映Pro,字幕工具,支持剪映字幕文件导入/导出">
+        <meta name="author" content="码中人">
+        <link rel="stylesheet" href="srt2jy0326.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="srt2jy0326.js" defer="defer"></script>
+    </head>
+    <body>
+        <h1 title="剪映字幕在线工具"><img src="jylogo.svg" alt="剪映字幕在线工具"><br>
+            <a href="index.html">字幕导出</a>
+            | 字幕导入
+        </h1>
+        <div id="steps">
+            <div class="left">
+                <div id="step1">
+                    <div class="control">
+                        <h2 class="step-title">
+                            步骤1：<label for="select-srt-file">选择字幕文件（srt)</label>
+                        </h2>
+                        <input type="file" size="60" placeholder="" id="select-srt-file">
+                    </div>
+                    <textarea id="srt"></textarea>
+                </div>
+                <div id="step2">
+                    <div class="control">
+                        <h2 class="step-title">
+                            步骤2：
+                            <label for="select-jy-file">选择剪映工程文件<span class="win">（draft_content.json)</span><span class="mac">（mac为draft_info.json)</span></label>
+                        </h2>
+                        <input type="file" size="60" placeholder="" id="select-jy-file">
+                    </div>
+                    <textarea id="jy-file"></textarea>
+                </div>
+            </div>
+            <div class="center">
+                <div id="step3">
+                    <button id="make-btn">步骤3<br/>合成</button>
+                </div>
+            </div>
+            <div class="right">
+                <div id="step4">
+                    <div class="control">
+                        <h2 class="step-title">
+                            步骤4：
+                            <label for="">下载合成好的剪映工程文件
+                                <span class="win">（draft_content.json)</span><span class="mac">（mac为draft_info.json)</span></label>
+                        </h2>
+                        <button id="save-btn" class="button-16">保存到本地</button>
+                        <button id="saveAsFilePicker" class="button-16">另存为</button>
+                    </div>
+                    <textarea id="new-jy-file"></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
